@@ -1,0 +1,104 @@
+.auth-page {
+  min-height: 100vh;
+  width: 100vw;
+
+  background-image: url("/images/bck.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+
+/* Card */
+.auth-card {
+  background: white;
+  padding: 40px;
+  width: 420px;            /* desktop-friendly width */
+  max-width: 90%;          /* responsive */
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+
+/* Heading */
+.auth-card h2 {
+  margin-bottom: 20px;
+}
+
+/* Input fields */
+.auth-card input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Buttons */
+.auth-card button {
+  width: 100%;
+  padding: 10px;
+  background: #243b55;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.auth-card button:hover {
+  background: #141e30;
+}
+
+/* Home buttons */
+.home-buttons button {
+  margin-top: 10px;
+}
+.go-back-btn {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+
+  width: 34px;
+  height: 34px;
+
+  background: rgba(255, 255, 255, 0.9);
+  color: #141e30;
+
+  border: none;
+  border-radius: 8px;   /* rounded square */
+
+  font-size: 16px;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+
+  z-index: 999;
+  transition: all 0.25s ease;
+
+  /* 🔑 OVERRIDES form button styles */
+  padding: 0;
+  max-width: none;
+}
+.auth-card .go-back-btn {
+  width: 34px !important;
+  height: 34px !important;
+  padding: 0 !important;
+}
+
+.go-back-btn:hover {
+  background: #141e30;
+  color: white;
+}
