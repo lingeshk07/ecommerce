@@ -17,7 +17,8 @@ function App() {
       {/* Navbar only after login */}
       {isLoggedIn && <Navbar />}
 
-      <Routes>
+      <div style={{ paddingTop: isLoggedIn ? '80px' : '0' }}>
+        <Routes>
         <Route path="/" element={<Home />} />
 
         <Route
@@ -52,7 +53,8 @@ function App() {
             isLoggedIn ? <Cart /> : <Login setIsLoggedIn={setIsLoggedIn} />
           }
         />
-      </Routes>
+        </Routes>
+      </div>
     </div>
   );
 }
